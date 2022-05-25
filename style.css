@@ -1,0 +1,34 @@
+@media (orientation:portrait)
+
+
+{
+    .grid{
+
+        display:grid;
+
+        grid-template-areas: "header"
+                             "navigation"
+                             "section"
+                             "aside"
+                             "footer";
+
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto 1fr auto;
+
+    }
+}
+.grid div{grid-area: header;
+         background-color:#1d6957;
+         align-items: center;
+          
+    }
+ .body, h1,h2,h3,h4,h5 {font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    }
+ .colum-padding img {margin-bottom: 15px;} 
+ .sidebar{width: 120px;
+          background:#634d66 ;
+}
+#main{margin-left:120px}   
+@media only screen and (max-width:600px){#main {margin-left: 0;}}
+    
+    
